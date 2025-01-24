@@ -15,6 +15,7 @@ return function ()
       AnchorPoint = Vector2.new(.5, .5),
       Position = UDim2.fromScale(.5, .1),
       Size = UDim2.fromScale(0.1, 0.075),
+      BackgroundTransparency = 1
     }, {
       Label = Roact.createElement("TextLabel", {
         TextScaled = true,
@@ -22,7 +23,7 @@ return function ()
         TextStrokeTransparency = 0,
         TextColor3 = Color3.fromHex("#ffffff"),
         Size = UDim2.fromScale(1, 1),
-        Text = self.state.countdown
+        Text = self.state.countdown,
       })
     })
   end
